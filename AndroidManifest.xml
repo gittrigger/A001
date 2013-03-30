@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.dullcomputers.a001"
+      android:versionCode="1"
+      android:versionName="1.0">
+    <application android:icon="@drawable/icon" android:label="@string/app_name" android:theme="@android:style/Theme.Translucent.NoTitleBar" android:multiprocess="true">
+        <activity android:name=".Motion"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    	<provider android:name="DataProvider" android:authorities="com.dullcomputers" android:multiprocess="true" />
+    </application>
+    <uses-sdk android:minSdkVersion="3" />
+<uses-permission android:name="android.permission.INTERNET" />
+<uses-permission android:name="android.permission.READ_CALENDAR"></uses-permission>
+<uses-permission android:name="android.permission.READ_CONTACTS"></uses-permission>
+<uses-permission android:name="android.permission.READ_OWNER_DATA"></uses-permission>
+<uses-permission android:name="android.permission.WRITE_CALENDAR"></uses-permission>
+<uses-permission android:name="android.permission.WRITE_CONTACTS"></uses-permission>
+<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+<uses-permission android:name="android.permission.WRITE_OWNER_DATA"></uses-permission>
+<uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS"></uses-permission>
+<uses-permission android:name="android.permission.WRITE_SETTINGS"></uses-permission>
+<uses-permission android:name="android.permission.READ_LOGS"></uses-permission>
+<uses-permission android:name="android.permission.VIBRATE"></uses-permission>
+<uses-permission android:name="android.permission.BATTERY_STATS"></uses-permission>
+
+</manifest> 
